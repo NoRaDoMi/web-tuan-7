@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Tuần 7</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-light bg-light mt-2">
+				<a class="navbar-brand">Home</a>
+				<form class="form-inline">
+					<input
+						class="form-control mr-sm-2"
+						type="search"
+						placeholder="Search"
+						aria-label="Search"
+					/>
+					<button
+						class="btn btn-outline-success my-2 my-sm-0"
+						type="submit"
+					>
+						Search
+					</button>
+				</form>
+			</nav>
+
+			<div class="d-flex align-items-stretch mt-3">
+				<div class="card w-25">
+					<div class="card-header text-white bg-primary">
+						Side title
+					</div>
+					<div class="card-body">
+						<p>side content</p>
+					</div>
+				</div>
+
+				<div class="card w-75 ml-4">
+					<div class="card-header text-white bg-primary">
+						Main title
+					</div>
+					<div class="card-body">
+						<table class="table">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Firstname</th>
+									<th scope="col">Lastname</th>
+									<th scope="col">Email</th>
+									<th scope="col">Avatar</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">2</th>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+						<nav aria-label="Page navigation example">
+							<ul class="pagination"></ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar border my-2">
+				<p>footer</p>
+			</nav>
+		</div>
+	</body>
+	<script>
+		displayTable(1);
+	</script>
+</html>
